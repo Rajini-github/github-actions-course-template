@@ -8,10 +8,11 @@
     "src": "src"
   },
   "scripts": {
-    "build": "npx webpack --config ./src/webpack.config.js --mode production",
-    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
-    "test": "npx standard && npx jest"
+    "build": "npx webpack --config ./src/webpack.config.js --mode production, --openssl-legacy-provider build",
+    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch, --openssl-legacy-provider dev",
+    "test": "npx standard && npx jest, --openssl-legacy-provider test"
   },
+
   "author": "githubtraining",
   "license": "MIT",
   "standard": {
